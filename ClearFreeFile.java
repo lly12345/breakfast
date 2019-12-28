@@ -8,7 +8,7 @@ public class ClearFile {
 	public static void main(String[] args) {
 	// TODO Auto-generated method stub
         // dir_str清理文件夹的路径 
-        String dir_str = "D:\\oppo手机备份";
+        String dir_str = "D:\\文件名字";
         File dir = new File( dir_str );
         clear( dir );
         System.out.println( "清理成功。" );
