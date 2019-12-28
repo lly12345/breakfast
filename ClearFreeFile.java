@@ -7,12 +7,12 @@ public class ClearFile {
 	
 	public static void main(String[] args) {
 	// TODO Auto-generated method stub
-        // dir_str�����ļ��е�·�� 
-        String dir_str = "D:\\oppo�ֻ�����";
+        // dir_str清理文件夹的路径 
+        String dir_str = "D:\\oppo手机备份";
         File dir = new File( dir_str );
         clear( dir );
-        System.out.println( "�����ɹ���" );
-        System.out.println( "��������" + iFile + "�����ļ���" );
+        System.out.println( "清理成功。" );
+        System.out.println( "共清理了" + iFile + "个空文件夹" );
 	}
 	
 	public static void clear( File dir )
@@ -27,7 +27,7 @@ public class ClearFile {
         }
         if( dir.isDirectory() && dir.delete() )
             iFile++;
-        System.out.println( dir + "�����ɹ�" );
+        System.out.println( dir + "清理成功" );
  
     }
 
